@@ -6,8 +6,7 @@ A twitter bot that checks the most recent tweet and deletes it if it's all caps.
 
 - An always-up server, if you want the bot to run at all times
 - A Twitter account
-- A command-line
-- Python
+- A command line shell with Python
 
 ###Installation
 
