@@ -31,7 +31,8 @@ while True:
   tweet = status["text"].encode('utf-8')
   tweet_id = str(status["id"])
 
-  print "@"+target+" status " + tweet_id + " : " + tweet
+  if debug:
+    print "@"+target+" status " + tweet_id + " : " + tweet
 
   # remove any valid usernames
 
@@ -49,7 +50,8 @@ while True:
   # if none are found
   if m is None:
     # ALL CAPS - DELETE
-    print "ALL CAPS - DELETING"
+    print tweet
+    print "ALL CAPS - DELETING: " + tweet_id
     try:
       twitter.destroy_status(id=tweet_id)
     except Exception, exception:
