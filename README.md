@@ -17,7 +17,7 @@ A twitter bot that checks the most recent tweet and deletes it if it's all caps.
 5. In the Keys and Access Tokens tab, "Regenerate Consumer Key and Secret", then "Create my access token" – Congratulations! You now have a Twitter app, with four secret keys.
 6. In your copy of this repository, edit the keys.py file and fill in the values with your new keys, as well as the username for the Twitter account in question.
 7. Upload chillpill.py and keys.py to your server someplace.
-8. Run the bot as a background process, outputting to a file called nohup.out, with this command:
+8. Log into the server and run the bot as a background process, outputting to a file called nohup.out, with this command:
 
 `nohup python chillpill.py &`
 
